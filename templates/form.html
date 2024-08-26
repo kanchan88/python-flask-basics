@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+
+    <h2>Enter Your Marks</h2>
+    <form action="{{ url_for('form') }}" method="post">
+        <label for="science">Science:</label>
+        <input type="number" id="science" name="science" min="0" max="100" required><br><br>
+        
+        <label for="math">Math:</label>
+        <input type="number" id="math" name="math" min="0" max="100" required><br><br>
+        
+        <label for="history">History:</label>
+        <input type="number" id="history" name="history" min="0" max="100" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>The average value is {{ score }}</h3>
+</body>
